@@ -1,2 +1,1 @@
-# chrome-extension-mv3-react-typescript
-A chrome extension boilerplate build with React 17, TypeScript 4 and Webpack 5.
+# Chrome Extension Manifest v3 Template with React 17, TypeScript 4, and Webpack 5.
