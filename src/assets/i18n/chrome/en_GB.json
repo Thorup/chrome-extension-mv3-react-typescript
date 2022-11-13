@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Chrome Extension Boilerplate",
+    "description": "The application name."
+  },
+  "extensionDescription": {
+    "message": "Helps you setup a chrome extension easily.",
+    "description": "The application description"
+  }
+}

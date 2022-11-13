@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension MV3 with React, TypeScript & Webpack",
+  "default_locale": "en_GB",
+  "options_page": "options.html",
+  "background": { "service_worker": "background.bundle.js" },
+  "devtools_page": "panel.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/images/icon-32.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "icons": {
+    "32": "assets/images/icon-32.png",
+    "64": "assets/images/icon-64.png",
+    "128": "assets/images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["contentScript.bundle.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/images/icon-128.png",
+        "assets/images/icon-64.png",
+        "assets/images/icon-32.png"
+      ],
+      "matches": []
+    }
+  ]
+}

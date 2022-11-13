@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": false,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "@typings/*": ["types/*"],
+      "@utils/*": ["webpack/*"],
+      "@assets/*": ["assets/*"],
+      "@background/*": ["context/background/*"],
+      "@content/*": ["context/content/*"],
+      "@newtab/*": ["context/Newtab/*"],
+      "@options/*": ["context/Options/*"],
+      "@panel/*": ["context/Panel/*"],
+      "@popup/*": ["context/Popup/*"],
+      "@mui/styled-engine": ["./node_modules/@mui/styled-engine"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["build", "node_modules"]
+}

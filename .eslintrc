@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "globals": {
+    "chrome": "readonly"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trallingComma": "all",
+        "singleQuote": true,
+        "printWidth": 80,
+        "semi": true,
+        "arrowParens": "always"
+      }
+    ],
+    "no-unused-vars": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "webextensions": true
+  }
+}
