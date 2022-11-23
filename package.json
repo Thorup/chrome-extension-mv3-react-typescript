@@ -21,14 +21,8 @@
     "debug:webserver": "npx webpack serve --config webpack.config.js --stats-error-details --env development --env goal=dev --env port=3000"
   },
   "dependencies": {
-    "@hot-loader/react-dom": "^17.0.2",
-    "@mui/material": "^5.10.13",
-    "@mui/styled-engine": "^5.10.8",
-    "i18next": "^22.0.4",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-hot-loader": "^4.13.0",
-    "styled-components": "^5.3.6"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
