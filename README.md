@@ -24,7 +24,7 @@ This template is inspired by the project https://github.com/lxieyang/chrome-exte
 
 See version tags [here](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tags).
 
-### `1.0.0`
+### `1.0.x`
 
 This contains the inital project using React 17, Webpack 5 and TypeScript 4.
 
@@ -32,9 +32,8 @@ Details:
 
 - Uses native CSS for styling.
 - Defines a very simple setup with many possibilities.
-- Contains unused node dependencies.
 
-### `1.1.0`
+### `1.1.x`
 
 This uses React 18, Webpack 5 and TypeScript 4.
 
