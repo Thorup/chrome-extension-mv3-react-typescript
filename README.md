@@ -19,3 +19,26 @@ Implements the following features:
 - Clone, install, go develop!
 
 This template is inspired by the project https://github.com/lxieyang/chrome-extension-boilerplate-react, which i found very helpful to teach me on how webpack could be configured to build files for a chrome extension.
+
+## Versions
+
+See version tags [here](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tags).
+
+### `1.0.0`
+
+This contains the inital project using React 17, Webpack 5 and TypeScript 4.
+
+Details:
+
+- Uses native CSS for styling.
+- Defines a very simple setup with many possibilities.
+- Contains unused node dependencies.
+
+### `1.1.0`
+
+This uses React 18. Furthermore any unused node dependencies have been removed for a clean project start.
+
+Details:
+
+- Uses native CSS for styling.
+- Defines a very simple setup with many possibilities.
