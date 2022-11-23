@@ -8,8 +8,6 @@ const ZipPlugin = require('zip-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const alias = {
-  // Package dependency
-  '@mui/styled-engine': '@mui/styled-engine',
   // Paths defined at tsconfig.
   '@typings': path.resolve(__dirname, 'src', 'types'),
   '@utils': path.resolve(__dirname, 'src', 'utils'),
