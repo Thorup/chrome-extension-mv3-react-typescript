@@ -36,7 +36,7 @@ Details:
 
 ### `1.1.0`
 
-This uses React 18. Furthermore any unused node dependencies have been removed for a clean project start.
+This uses React 18, Webpack 5 and TypeScript 4.
 
 Details:
 
