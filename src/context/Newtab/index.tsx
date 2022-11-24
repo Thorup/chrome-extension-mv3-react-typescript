@@ -2,9 +2,15 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import Newtab from './Newtab';
-import './index.css';
+import GlobalStyle from './styled.index';
 
-render(<Newtab />, window.document.querySelector('#app-container'));
+render(
+  <>
+    <GlobalStyle />
+    <Newtab />
+  </>,
+  window.document.querySelector('#app-container'),
+);
 
 if (module.hot) {
   module.hot.accept();

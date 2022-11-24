@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import './Panel.css';
 import logo from '@assets/images/logo.svg';
+import * as S from './styled.Panel';
 
 interface Props {}
 
@@ -13,22 +13,21 @@ const Panel: React.FC<Props> = (): ReactElement<any, any> | null => {
   );
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <S.App>
+      <S.AppHeader>
+        <S.AppLogo src={logo} alt="logo" />
         <p>
           Edit <code>src/context/Panel/Panel.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
+        <S.AppLink
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React!
-        </a>
-      </header>
-    </div>
+        </S.AppLink>
+      </S.AppHeader>
+    </S.App>
   );
 };
 

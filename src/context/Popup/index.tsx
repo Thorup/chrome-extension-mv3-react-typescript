@@ -2,9 +2,15 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import Popup from './Popup';
-import './index.css';
+import GlobalStyle from './styled.index';
 
-render(<Popup />, window.document.querySelector('#app-container'));
+render(
+  <>
+    <GlobalStyle />
+    <Popup />
+  </>,
+  window.document.querySelector('#app-container'),
+);
 
 if (module.hot) {
   module.hot.accept();

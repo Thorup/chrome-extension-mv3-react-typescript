@@ -24,8 +24,7 @@
       "@newtab/*": ["context/Newtab/*"],
       "@options/*": ["context/Options/*"],
       "@panel/*": ["context/Panel/*"],
-      "@popup/*": ["context/Popup/*"],
-      "@mui/styled-engine": ["./node_modules/@mui/styled-engine"]
+      "@popup/*": ["context/Popup/*"]
     }
   },
   "include": ["src"],

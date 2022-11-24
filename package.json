@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-mv3-react-typescript",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A chrome extension template build with Manifest v3, React 18, TypeScript 4 and Webpack 5.",
   "license": "MIT",
   "repository": {
@@ -10,19 +10,20 @@
   "scripts": {
     "start:dev": "npx webpack serve --config webpack.config --env development --env goal=dev --env port=3000",
     "start:test": "npx webpack serve --config webpack.config --env development --env goal=test --env port=3000",
-    "start:prod": "npx webpack serve --config webpack.config --env production --env goal=prod --env port=3000",
+    "start:prod": "npx webpack serve --config webpack.config --env development --env goal=prod --env port=3000",
     "start:release": "npx webpack serve --config webpack.config --env production --env goal=prod --env port=3000",
     "zip:all": "npm run zip:dev && npm run zip:test && npm run zip:prod && npm run zip:release",
     "zip:dev": "npx webpack --config webpack.config --env development --env goal=dev --env zip --env zipName=draft_release_dev",
     "zip:test": "npx webpack --config webpack.config --env development --env goal=test --env zip --env zipName=draft_release_test",
-    "zip:prod": "npx webpack --config webpack.config --env production --env goal=prod --env zip --env zipName=draft_release_prod",
+    "zip:prod": "npx webpack --config webpack.config --env development --env goal=prod --env zip --env zipName=draft_release_prod",
     "zip:release": "npx webpack --config webpack.config --env production --env goal=prod --env zip --env zipName=official_release",
     "debug:webpack": "npx webpack --config webpack.config.js --stats-error-details --env development --env goal=dev",
     "debug:webserver": "npx webpack serve --config webpack.config.js --stats-error-details --env development --env goal=dev --env port=3000"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
@@ -32,10 +33,12 @@
     "@types/chrome": "^0.0.203",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "@types/styled-components": "^5.1.26",
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.18.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^9.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
     "babel-preset-react-app": "^10.0.1",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
