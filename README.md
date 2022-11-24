@@ -20,7 +20,7 @@ Implements the following features:
 
 ## Versions
 
-See version tags [here](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tags).
+[> Go to version tags](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tags)
 
 ### `1.0.x`
 
