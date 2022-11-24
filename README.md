@@ -21,9 +21,11 @@ Implements the following features:
 
 ## Versions
 
-See version tags [here](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tags).
+[> Go to version tags](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tags)
 
 ### `1.0.x`
+
+[> Go to branch](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tree/version/1.0.x)
 
 This uses React 17, Webpack 5 and TypeScript 4.
 
@@ -34,6 +36,8 @@ Details:
 
 ### `1.1.x`
 
+[> Go to branch](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tree/version/1.1.x)
+
 This uses React 18, Webpack 5 and TypeScript 4.
 
 Details:
@@ -42,6 +46,8 @@ Details:
 - Defines a very simple setup with many possibilities.
 
 ### `1.2.x`
+
+[> Go to branch](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tree/version/1.2.x)
 
 This uses React 18, styled-components 5, Webpack 5, TypeScript 4.
 
