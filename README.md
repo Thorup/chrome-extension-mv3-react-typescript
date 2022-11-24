@@ -1,4 +1,4 @@
-# Template for Chrome Extension Manifest v3 with React 18, TypeScript 4, and Webpack 5.
+# Template for Chrome Extension Manifest v3 with React 18, Styled Components 5, TypeScript 4, and Webpack 5.
 
 ![Node v18.12.1](https://img.shields.io/badge/node-v18.12.1-blue)
 ![React v18.2.0](https://img.shields.io/badge/react-v18.2.0-blue)
@@ -9,16 +9,15 @@
 
 Implements the following features:
 
-- Chrome manifest v3.
-- React 18.
-- Webpack 5.
-- TypeScript 4.
+- [Chrome manifest v3.](https://developer.chrome.com/docs/extensions/mv3/intro/)
+- [React 18.](https://reactjs.org/)
+- [Webpack 5.](https://webpack.js.org/)
+- [TypeScript 4.](https://www.typescriptlang.org/)
+- [Styled Components 5.](https://styled-components.com/)
 - Hot-reload using webpack-dev-server.
 - NPM scripts for building dev-server, and zip-release with webpack.
 - eslint and prettier.
 - Clone, install, go develop!
-
-This template is inspired by the project https://github.com/lxieyang/chrome-extension-boilerplate-react, which i found very helpful to teach me on how webpack could be configured to build files for a chrome extension.
 
 ## Versions
 
@@ -26,7 +25,7 @@ See version tags [here](https://github.com/Thorup/chrome-extension-mv3-react-typ
 
 ### `1.0.x`
 
-This contains the inital project using React 17, Webpack 5 and TypeScript 4.
+This uses React 17, Webpack 5 and TypeScript 4.
 
 Details:
 
@@ -41,3 +40,17 @@ Details:
 
 - Uses native CSS for styling.
 - Defines a very simple setup with many possibilities.
+
+### `1.2.x`
+
+This uses React 18, styled-components 5, Webpack 5, TypeScript 4.
+
+Details:
+
+- Uses styled-components 5 for modern component styling.
+- Defines a very simple setup with many possibilities.
+- I recommend to install a [Syntax highlighter](https://styled-components.com/docs/tooling#syntax-highlighting) for styled-components.
+
+## Credits
+
+This template is inspired by the project at https://github.com/lxieyang/chrome-extension-boilerplate-react, which i found very helpful to teach me on how webpack could be configured to build files for a chrome extension.
