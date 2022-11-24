@@ -18,15 +18,15 @@ Implements the following features:
 - eslint and prettier.
 - Clone, install, go develop!
 
-This template is inspired by the project https://github.com/lxieyang/chrome-extension-boilerplate-react, which i found very helpful to teach me on how webpack could be configured to build files for a chrome extension.
-
 ## Versions
 
 See version tags [here](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tags).
 
 ### `1.0.x`
 
-This contains the inital project using React 17, Webpack 5 and TypeScript 4.
+[> Go to branch](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tree/version/1.0.x)
+
+This uses React 17, Webpack 5 and TypeScript 4.
 
 Details:
 
@@ -35,9 +35,27 @@ Details:
 
 ### `1.1.x`
 
+[> Go to branch](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tree/version/1.1.x)
+
 This uses React 18, Webpack 5 and TypeScript 4.
 
 Details:
 
 - Uses native CSS for styling.
 - Defines a very simple setup with many possibilities.
+
+### `1.2.x`
+
+[> Go to branch](https://github.com/Thorup/chrome-extension-mv3-react-typescript/tree/version/1.2.x)
+
+This uses React 18, styled-components 5, Webpack 5, TypeScript 4.
+
+Details:
+
+- Uses styled-components 5 for modern component styling.
+- Defines a very simple setup with many possibilities.
+- I recommend to install a [Syntax highlighter](https://styled-components.com/docs/tooling#syntax-highlighting) for styled-components.
+
+## Credits
+
+This template is inspired by the project at https://github.com/lxieyang/chrome-extension-boilerplate-react, which i found very helpful to teach me on how webpack could be configured to build files for a chrome extension.
