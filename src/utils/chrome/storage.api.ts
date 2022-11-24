@@ -15,6 +15,9 @@ export interface SetAreaDetails<T extends AreaKey> {
   };
 }
 
+/**
+ * Defines the format of the details for updating the storage items for a certain area.
+ */
 export interface UpdateAreaDetails<T extends AreaKey> {
   areaName: AreaName;
   key: T;
