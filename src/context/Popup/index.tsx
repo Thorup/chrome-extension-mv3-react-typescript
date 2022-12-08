@@ -13,5 +13,12 @@ render(
 );
 
 if (module.hot) {
-  module.hot.accept();
+  const status: string = module.hot.status();
+
+  console.log('popup _> status: ', status);
+
+  module.hot.accept((error) => {
+    console.warn('popup _> error: ', error);
+    console.warn('popup _> error.cause: ', error.cause);
+  });
 }

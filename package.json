@@ -11,14 +11,14 @@
     "start:dev": "npx webpack serve --config webpack.config --env development --env goal=dev --env port=3000",
     "start:test": "npx webpack serve --config webpack.config --env development --env goal=test --env port=3000",
     "start:prod": "npx webpack serve --config webpack.config --env development --env goal=prod --env port=3000",
-    "start:release": "npx webpack serve --config webpack.config --env production --env goal=prod --env port=3000",
+    "start:release": "npx webpack serve --client-progress --config webpack.config --env production --env goal=prod --env port=3000",
     "zip:all": "npm run zip:dev && npm run zip:test && npm run zip:prod && npm run zip:release",
     "zip:dev": "npx webpack --config webpack.config --env development --env goal=dev --env zip --env zipName=draft_release_dev",
     "zip:test": "npx webpack --config webpack.config --env development --env goal=test --env zip --env zipName=draft_release_test",
     "zip:prod": "npx webpack --config webpack.config --env development --env goal=prod --env zip --env zipName=draft_release_prod",
     "zip:release": "npx webpack --config webpack.config --env production --env goal=prod --env zip --env zipName=official_release",
-    "debug:webpack": "npx webpack --config webpack.config.js --stats-error-details --env development --env goal=dev",
-    "debug:webserver": "npx webpack serve --config webpack.config.js --stats-error-details --env development --env goal=dev --env port=3000"
+    "debug:webpack": "npx webpack --client-progress --config webpack.config.js --stats-error-details --env development --env goal=dev",
+    "debug:webserver": "npx webpack serve --client-progress --config webpack.config.js --stats-error-details --env development --env goal=dev --env port=3000"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -31,6 +31,7 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@types/chrome": "^0.0.203",
+    "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "@types/styled-components": "^5.1.26",

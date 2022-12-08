@@ -17,7 +17,7 @@
     "baseUrl": "./src",
     "paths": {
       "@typings/*": ["types/*"],
-      "@utils/*": ["webpack/*"],
+      "@utils/*": ["utils/*"],
       "@assets/*": ["assets/*"],
       "@background/*": ["context/background/*"],
       "@content/*": ["context/content/*"],
@@ -27,6 +27,6 @@
       "@popup/*": ["context/Popup/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "types"],
   "exclude": ["build", "node_modules"]
 }

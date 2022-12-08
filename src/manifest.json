@@ -23,6 +23,7 @@
       "js": ["contentScript.bundle.js"]
     }
   ],
+  "permissions": ["management", "tabs"],
   "web_accessible_resources": [
     {
       "resources": [
