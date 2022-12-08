@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-mv3-react-typescript",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A chrome extension template build with Manifest v3, React 18, TypeScript 4 and Webpack 5.",
   "license": "MIT",
   "repository": {
