@@ -11,13 +11,13 @@ addManagementListeners();
  */
 addRuntimeListeners();
 
-if (module.hot) {
-  const status: string = module.hot.status();
+// if (module.hot) {
+//   const status: string = module.hot.status();
 
-  console.log('backgound _> status : ', status);
+//   console.log('backgound _> status : ', status);
 
-  module.hot.accept((error) => {
-    console.warn('background _> error: ', error);
-    console.warn('background _> error.cause: ', error.cause);
-  });
-}
+//   module.hot.accept((error) => {
+//     console.warn('background _> error: ', error);
+//     console.warn('background _> error.cause: ', error.cause);
+//   });
+// }

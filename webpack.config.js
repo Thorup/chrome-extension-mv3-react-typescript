@@ -6,7 +6,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const ZipPlugin = require('zip-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { timeStamp } = require('console');
 
 const alias = {
   // Paths defined at tsconfig.
@@ -274,25 +273,11 @@ module.exports = (env) => {
       ...(env.WEBPACK_SERVE
         ? {
             https: false,
-            hot: true,
+            hot: 'only',
             liveReload: false,
             host: 'localhost',
             port: env.port,
-            client: {
-              logging: 'log',
-              reconnect: false,
-              progress: false,
-            },
-            watchFiles: [
-              path.join(__dirname, 'src/assets/**/*'),
-              path.join(__dirname, 'src/types/**/*'),
-              path.join(__dirname, 'src/utils/**/*'),
-              path.join(__dirname, 'src/context/Content/**/*'),
-              path.join(__dirname, 'src/context/Newtab/**/*'),
-              path.join(__dirname, 'src/context/Options/**/*'),
-              path.join(__dirname, 'src/context/Panel/**/*'),
-              path.join(__dirname, 'src/context/Popup/**/*'),
-            ],
+            watchFiles: [path.join(__dirname, 'src/**/*')],
             static: {
               directory: path.join(__dirname, 'dist'),
             },
