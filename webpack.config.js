@@ -34,7 +34,6 @@ const fileExtensions = [
 ];
 
 module.exports = (env) => {
-  console.log(env);
   return {
     mode: env.production ? 'production' : 'development',
     entry: {

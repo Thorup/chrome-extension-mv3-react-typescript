@@ -38,8 +38,6 @@ export const reloadTabs = async (): Promise<boolean> => {
         const isWebAddress = url.match(/^http[s]?:\/\//);
 
         if (isWebAddress && !matchedTabs.includes(id)) {
-          console.log('reload _> status: ', status);
-          console.log('reload _> url: ', tabs[j].url);
           await chrome.tabs.reload(id);
           matchedTabs.push(id);
         }

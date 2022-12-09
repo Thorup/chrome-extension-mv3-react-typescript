@@ -12,8 +12,6 @@ const addRuntimeListeners = (): void => {
    */
   chrome.runtime.onInstalled.addListener(
     async (details: chrome.runtime.InstalledDetails): Promise<void> => {
-      console.log('onInstalled _> info: ', details);
-
       const reason: chrome.runtime.OnInstalledReason = details.reason;
 
       switch (reason) {

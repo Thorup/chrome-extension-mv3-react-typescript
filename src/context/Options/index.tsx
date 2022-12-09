@@ -13,12 +13,5 @@ render(
 );
 
 if (module.hot) {
-  const status: string = module.hot.status();
-
-  console.log('options _> status: ', status);
-
-  module.hot.accept((error) => {
-    console.warn('options _> error: ', error);
-    console.warn('options _> error.cause: ', error.cause);
-  });
+  module.hot.accept();
 }

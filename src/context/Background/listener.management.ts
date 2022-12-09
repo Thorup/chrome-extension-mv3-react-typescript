@@ -12,7 +12,6 @@ const addManagementListeners = () => {
   chrome.management.onEnabled.addListener(
     async (info: chrome.management.ExtensionInfo): Promise<void> => {
       if (info.id === chrome.runtime.id) {
-        console.log('onEnabled _> info: ', info);
         await ChromeUtils.TabsAPI.reloadTabs();
       }
     },

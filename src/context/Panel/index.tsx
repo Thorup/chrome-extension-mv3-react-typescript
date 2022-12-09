@@ -13,12 +13,5 @@ render(
 );
 
 if (module.hot) {
-  const status: string = module.hot.status();
-
-  console.log('panel _> status: ', status);
-
-  module.hot.accept((error) => {
-    console.warn('panel _> error: ', error);
-    console.warn('panel _> error.cause: ', error.cause);
-  });
+  module.hot.accept();
 }
