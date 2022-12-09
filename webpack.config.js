@@ -277,6 +277,9 @@ module.exports = (env) => {
             liveReload: false,
             host: 'localhost',
             port: env.port,
+            client: {
+              reconnect: false,
+            },
             watchFiles: [path.join(__dirname, 'src/**/*')],
             static: {
               directory: path.join(__dirname, 'dist'),
