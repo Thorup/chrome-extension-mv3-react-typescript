@@ -1,15 +1,18 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import Options from './Options';
 import GlobalStyle from './styled.index';
 
-render(
+const container = document.getElementById('app-container');
+
+const root = createRoot(container!);
+
+root.render(
   <>
     <GlobalStyle />
     <Options />
   </>,
-  window.document.querySelector('#app-container'),
 );
 
 if (module.hot) {
