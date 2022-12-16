@@ -1,5 +1,3 @@
-export * as MessageAPI from './message.api';
-export * as MessageFormat from './message.format';
-export * as StorageAPI from './storage.api';
-export * as StorageFormat from './storage.format';
-export * as TabsAPI from './tabs.api';
+export * as Message from './message';
+export * as Storage from './storage';
+export * as Tabs from './tabs';
